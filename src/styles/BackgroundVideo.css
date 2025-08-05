@@ -1,0 +1,14 @@
+.video-bg {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
+    object-fit: none;      /* 不缩放视频 */
+    z-index: -1;           /* 让视频在底部 */
+    background: black;     /* 可选，防止空白 */
+    pointer-events: none;  /* 防止视频拦截鼠标事件 */
+}
