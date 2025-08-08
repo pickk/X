@@ -9,7 +9,7 @@ loop
 muted
 playsInline
 >
-<source src="public/trailer.mp4" type="video/mp4" />
+<source src="trailer.mp4" type="video/mp4" />
     您的浏览器不支持视频标签。
   </video>
 );

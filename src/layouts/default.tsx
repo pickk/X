@@ -1,5 +1,5 @@
 
-import { MyNavbar } from "@/components/navbar";
+// import { MyNavbar } from "@/components/navbar";
 
 export default function DefaultLayout({
   children,
@@ -8,7 +8,7 @@ export default function DefaultLayout({
 }) {
   return (
     <div className="relative flex flex-col h-screen">
-      <MyNavbar />
+      {/*<MyNavbar />*/}
       <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
         {children}
       </main>

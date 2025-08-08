@@ -5,13 +5,16 @@ import { button as buttonStyles } from "@heroui/theme";
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
+import BackgroundVideo from "@/components/BackgroundVideo.tsx";
+import StickyScrollLock from "@/components/StickyScrollLock.tsx";
 
 export default function IndexPage() {
   return (
     <DefaultLayout>
+        <BackgroundVideo />
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
-          <span className={title()}>Welcome To&nbsp;</span>
+          <span className={title()}>Welcome to&nbsp;</span>
           <span className={title({ size: "lg", color: "violet" })}>China&nbsp;</span>
         </div>
 
@@ -38,6 +41,7 @@ export default function IndexPage() {
           </Snippet>
         </div>
       </section>
+        <StickyScrollLock/>
     </DefaultLayout>
   );
 }
