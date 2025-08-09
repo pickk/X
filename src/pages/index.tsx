@@ -4,25 +4,22 @@ import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
-import DefaultLayout from "@/layouts/default";
-import BackgroundVideo from "@/components/BackgroundVideo.tsx";
 import StickyScrollLock from "@/components/StickyScrollLock.tsx";
 
 export default function IndexPage() {
   return (
-    <DefaultLayout>
-        <BackgroundVideo />
+      <>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-lg text-center justify-center">
+          <StickyScrollLock/>
+        <div className="inline-block max-w-lg text-center justify-center zIndex:1">
           <span className={title()}>Welcome to&nbsp;</span>
           <span className={title({ size: "lg", color: "violet" })}>China&nbsp;</span>
         </div>
-
         <div className="flex gap-3">
           <Link
             isExternal
             className={buttonStyles({
-              color: "primary",
+                color: "primary",
               radius: "full",
               variant: "shadow",
             })}
@@ -41,7 +38,8 @@ export default function IndexPage() {
           </Snippet>
         </div>
       </section>
-        <StickyScrollLock/>
-    </DefaultLayout>
+        <div style={{ position: 'absolute', top: 12000 }}>123312132123</div>
+
+      </>
   );
 }
