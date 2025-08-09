@@ -5,13 +5,14 @@ import { button as buttonStyles } from "@heroui/theme";
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
 import StickyScrollLock from "@/components/StickyScrollLock.tsx";
+import '/src/styles/fixed-y.css';
 
 export default function IndexPage() {
   return (
       <>
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
           <StickyScrollLock/>
-        <div className="inline-block max-w-lg text-center justify-center zIndex:1">
+      <section className="fixed-y">
+        <div className="inline-block max-w-lg text-center justify-center zIndex:99999">
           <span className={title()}>Welcome to&nbsp;</span>
           <span className={title({ size: "lg", color: "violet" })}>China&nbsp;</span>
         </div>

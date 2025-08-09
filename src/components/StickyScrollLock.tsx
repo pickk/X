@@ -24,14 +24,11 @@ const StickyExample = () => {
             <div
                 ref={ref}
                 style={{
-                    marginTop: 10, // 或 paddingTop: 200
                     position: fixed ? "fixed" : "static",
                     left: 0,
                     right: 0,
-                    top: 0,
                     padding: 32,
-                    zIndex: 100,
-
+                    zIndex: 0,
                 }}
             >
                 {window.scrollY}
