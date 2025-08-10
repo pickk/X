@@ -30,6 +30,7 @@ const StickyExample = () => {
         padding: 32,
     };
 
+
     if (mode === "fixed") {
         style.position = "fixed";
         style.top = 0;
