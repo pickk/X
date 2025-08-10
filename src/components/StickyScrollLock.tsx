@@ -3,37 +3,32 @@ import BackgroundVideo from "@/components/BackgroundVideo.tsx";
 
 const StickyExample = () => {
     const ref = useRef<HTMLDivElement>(null);
-    const [fixed, setFixed] = useState(false);
+    const [active, setActive] = useState(false);
+    const [scrollY, setScrollY] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (!ref.current) return;
-            // 进入 fixed
-            if (window.scrollY>=111 && window.scrollY<1200) {
-                setFixed(true);
-            }
-            else {
-                setFixed(false);
-            }
+            setScrollY(window.scrollY);
+            setActive(window.scrollY >= 1200);
         };
         window.addEventListener("scroll", handleScroll);
+        handleScroll();
         return () => window.removeEventListener("scroll", handleScroll);
-    },[window.scrollY]); // 只绑定一次，避免闭包问题！
+    }, []);
 
     return (
-            <div
-                ref={ref}
-                style={{
-                    position: fixed ? "fixed" : "static",
-                    left: 0,
-                    right: 0,
-                    padding: 32,
-                    zIndex: 0,
-                }}
-            >
-                {window.scrollY}
-                <BackgroundVideo />
-            </div>
+        <div
+            ref={ref}
+            style={{
+                height: 2000,
+                overflow: "auto",
+                background: "#eee",
+            }}
+            onWheel={active ? undefined : (e) => e.preventDefault()}
+        >
+            {scrollY}
+            <BackgroundVideo />
+        </div>
     );
 };
 

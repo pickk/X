@@ -1,6 +1,6 @@
 .fixed-y {
-  top: 200px;          /* 距离页面顶部 200px */
-  left: 50%;           /* 水平居中 */
-  transform: translateX(-50%); /* 让中心点居中 */
+  position: absolute;
+  top: 650px;          /* 距离页面顶部 200px */
+  left: 45%;           /* 水平居中 */
   z-index: 10000;         /* 层级，越大越在上面 */
 }

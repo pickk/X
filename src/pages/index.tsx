@@ -12,8 +12,8 @@ export default function IndexPage() {
       <>
           <StickyScrollLock/>
       <section className="fixed-y">
-        <div className="inline-block max-w-lg text-center justify-center zIndex:99999">
-          <span className={title()}>Welcome to&nbsp;</span>
+        <div className="inline-block max-w-lg text-center justify-center z-[99999]">
+            <span className={title({ className: "relative z-[99999]" })}>Welcome to&nbsp;</span>
           <span className={title({ size: "lg", color: "violet" })}>China&nbsp;</span>
         </div>
         <div className="flex gap-3">
