@@ -6,13 +6,15 @@ import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
 import StickyScrollLock from "@/components/StickyScrollLock.tsx";
 import '/src/styles/fixed-y.css';
-
+import Navbara from "@/components/navbar.tsx";
 export default function IndexPage() {
   return (
       <>
-          <StickyScrollLock/>
+          <Navbara />
+      <StickyScrollLock/>
       <section className="fixed-y">
-        <div className="inline-block max-w-lg text-center justify-center z-[99999]">
+
+        <div className="inline-block max-w-lg text-center justify-center z-[999]">
             <span className={title({ className: "relative z-[99999]" })}>Welcome to&nbsp;</span>
           <span className={title({ size: "lg", color: "violet" })}>China&nbsp;</span>
         </div>

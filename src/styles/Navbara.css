@@ -1,0 +1,7 @@
+.navbar {
+    background-color: #ffffff;
+    padding: 10px;
+    color: black;
+    position: static;
+    z-index: 100000;
+}
