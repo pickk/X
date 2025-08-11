@@ -3,7 +3,6 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;     /* 保持比例并充满，超出会裁切 */
-    z-index: -5;           /* 需要在底层显示就用负值；看不见时提高或调整内容层的 z-index */
     pointer-events: none;  /* 防止挡住点击 */
 }
 html, body { margin: 0; } /* 防止出现白边 */

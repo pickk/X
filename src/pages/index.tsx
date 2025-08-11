@@ -7,6 +7,7 @@ import { title } from "@/components/primitives";
 import StickyScrollLock from "@/components/StickyScrollLock.tsx";
 import '/src/styles/fixed-y.css';
 import MyNavbar from "@/components/navbar.tsx";
+
 export default function IndexPage() {
   return (
       <>
@@ -14,7 +15,7 @@ export default function IndexPage() {
       <StickyScrollLock/>
       <section className="fixed-y">
 
-        <div className="inline-block max-w-lg text-center justify-center z-[999]">
+        <div className="inline-block max-w-lg text-center justify-center">
             <span className={title({ className: "relative z-[99999]" })}>Welcome to&nbsp;</span>
           <span className={title({ size: "lg", color: "violet" })}>China&nbsp;</span>
         </div>
@@ -41,7 +42,7 @@ export default function IndexPage() {
           </Snippet>
         </div>
       </section>
-        <div style={{ position: 'absolute', top: 12000 }}>123312132123</div>
+        <div style={{ position: 'relative', top: 12322 }}>123312132123</div>
 
       </>
   );

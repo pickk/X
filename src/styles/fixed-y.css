@@ -1,7 +1,7 @@
 .fixed-y {
-  position: absolute;
+    position: absolute;
     top: 650px;
     left: 50%;
     transform: translateX(-50%);
-  z-index: 10000;         /* 层级，越大越在上面 */
+    z-index: 10000;         /* 层级，越大越在上面 */
 }
