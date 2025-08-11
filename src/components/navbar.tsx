@@ -10,9 +10,7 @@ import {
     Dropdown,
     DropdownMenu,
 } from "@heroui/react";
-import React from "react";
-import '/src/styles/Navbara.css';
-
+import '../styles/Navbara.css';
 export const AcmeLogo = () => {
     return (
         <svg fill="none" height="36" viewBox="0 0 32 32" width="36">
@@ -26,7 +24,7 @@ export const AcmeLogo = () => {
     );
 };
 
-export const ChevronDown = ({fill, size, height, width, ...props}) => {
+export const ChevronDown = ({fill, size, height, width, ...props}: IconProps) => {
     return (
         <svg
             fill="none"
@@ -48,7 +46,7 @@ export const ChevronDown = ({fill, size, height, width, ...props}) => {
     );
 };
 
-export const Lock = ({fill, size, height, width, ...props}) => {
+export const Lock = ({fill, size, height, width, ...props}: IconProps) => {
     const color = fill;
 
     return (
@@ -95,7 +93,7 @@ export const Lock = ({fill, size, height, width, ...props}) => {
     );
 };
 
-export const Activity = ({fill, size, height, width, ...props}) => {
+export const Activity = ({fill, size, height, width, ...props}: IconProps) => {
     return (
         <svg
             height={size || height || 24}
@@ -120,7 +118,7 @@ export const Activity = ({fill, size, height, width, ...props}) => {
     );
 };
 
-export const Flash = ({fill = "currentColor", size, height, width, ...props}) => {
+export const Flash = ({fill = "currentColor", size, height, width, ...props}: IconProps) => {
     return (
         <svg
             fill="none"
@@ -141,8 +139,14 @@ export const Flash = ({fill = "currentColor", size, height, width, ...props}) =>
         </svg>
     );
 };
-
-export const Server = ({fill = "currentColor", size, height, width, ...props}) => {
+type IconProps = {
+    fill?: string;
+    size?: number;
+    height?: number;
+    width?: number;
+    [key: string]: any;
+};
+export const Server = ({fill = "currentColor", size, height, width, ...props}: IconProps) => {
     return (
         <svg
             fill="none"
@@ -163,7 +167,7 @@ export const Server = ({fill = "currentColor", size, height, width, ...props}) =
     );
 };
 
-export const TagUser = ({fill = "currentColor", size, height, width, ...props}) => {
+export const TagUser = ({fill = "currentColor", size, height, width, ...props}: IconProps) => {
     return (
         <svg
             fill="none"
@@ -192,7 +196,7 @@ export const TagUser = ({fill = "currentColor", size, height, width, ...props}) 
     );
 };
 
-export const Scale = ({fill = "currentColor", size, height, width, ...props}) => {
+export const Scale = ({fill = "currentColor", size, height, width, ...props}: IconProps) => {
     return (
         <svg
             fill="none"
@@ -220,7 +224,7 @@ export const Scale = ({fill = "currentColor", size, height, width, ...props}) =>
     );
 };
 
-export default function Navbara() {
+export default function MyNavbar() {
     const icons = {
         chevron: <ChevronDown fill="currentColor" size={16} />,
         scale: <Scale className="text-warning" fill="currentColor" size={30} />,

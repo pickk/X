@@ -6,11 +6,11 @@ import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
 import StickyScrollLock from "@/components/StickyScrollLock.tsx";
 import '/src/styles/fixed-y.css';
-import Navbara from "@/components/navbar.tsx";
+import MyNavbar from "@/components/navbar.tsx";
 export default function IndexPage() {
   return (
       <>
-          <Navbara />
+          <MyNavbar />
       <StickyScrollLock/>
       <section className="fixed-y">
 

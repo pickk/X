@@ -35,7 +35,7 @@ const StickyExample = () => {
         style.top = 0;
     } else if (mode === "absolute") {
         style.position = "absolute";
-        style.top = STICKY_END - HEIGHT;
+        style.top = STICKY_END - HEIGHT;c
     } else {
         style.position = "static";
     }
