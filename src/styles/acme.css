@@ -1,0 +1,17 @@
+.acme{
+    --acme-color: rgba(0, 0, 0, 0.98);
+    --acme-font-size: 40px;
+    --acme-padding: 20px;
+    --acme-border-radius: 5px;
+    --acme-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    color: var(--acme-color);
+    font-size: var(--acme-font-size);
+    padding: var(--acme-padding);
+    border-radius: var(--acme-border-radius);
+    box-shadow: var(--acme-box-shadow);
+    margin-left: -70rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 0.04em;
+    font-weight: 650;
+}

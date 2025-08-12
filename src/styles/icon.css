@@ -1,0 +1,15 @@
+.icon{
+    width: 15rem;
+    height: 4rem;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-left: 6rem;
+    margin-top: 0.2rem;
+    color: #000000; /* 默认颜色 */
+    transition: color 0.3s ease; /* 平滑过渡颜色变化 */
+}

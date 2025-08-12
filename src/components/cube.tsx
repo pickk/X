@@ -14,7 +14,8 @@ const TranslucentBox = () => {
             fontSize: "24px"
         }}>
             <div className={title({ className: "relative z-[99999]"})} style={{fontSize: "65px"}}>MAKE LIFE AN ADVENTURE{'\n'}
-                <div style={{ color: "rgba(1,1,1,0.89)", fontSize: "33px"}}>Welcome to China</div></div>
+                <div style={{fontSize: "30px"}}>&nbsp;</div>
+                <div style={{ color: "rgba(1,1,1,0.89)", fontSize: "33px"}}>Welcome to My Space</div></div>
         </div>
     );
 };
