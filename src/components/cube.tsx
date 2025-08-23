@@ -7,11 +7,11 @@ const TranslucentBox = () => {
             color: "rgba(0,0,0,0.98)",
             display: "flex",
             justifyContent: "center",
-            alignItems: "flex-start", // 顶部对齐
+            // alignItems: "flex-start", // 顶部对齐
             borderRadius: "16px",
-            fontSize: "24px",
-            position: "relative",
-            transform: "translateY(-35%)", // 向下移动 30%
+            // fontSize: "24px",
+            // position: "relative",
+            // transform: "translateY(-35%)", // 向下移动 30%
         }}>
             <div className={title({ className: "relative z-[99999]"})} style={{fontSize: "65px", fontWeight: 650,
                                                                                 fontFamily: "'Courier New', Courier, monospace", // 修正为 fontFamily

@@ -1,0 +1,9 @@
+.articles{
+    width: 1300px;
+    height: 550px;
+    background: #eaf0fc;
+    display: block;
+    margin: 60px auto;
+    border-radius: 20px;
+    color: aquamarine;
+}

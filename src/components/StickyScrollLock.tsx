@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import BackgroundVideo from "@/components/BackgroundVideo.tsx";
-
+import ShowArticles from "@/components/ShowArticles.tsx";
 const STICKY_END = 1200;    // 结束吸顶的位置
 const HEIGHT = 200;         // 组件自身高度（可用ref自动测量）
 
@@ -45,7 +45,9 @@ const StickyExample = () => {
         <div style={{ position: "relative", height: HEIGHT }}>
             <div ref={ref} style={style}>
                 <BackgroundVideo />
+                <div className="articles"><ShowArticles /></div>
             </div>
+
         </div>
     );
 };
