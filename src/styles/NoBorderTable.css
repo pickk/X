@@ -1,0 +1,15 @@
+.no-border-table{
+    border-collapse: collapse;
+    width: 100%;
+    color: #141414;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 100px 10px;
+}
+.no-border-table th {
+    padding: 20px; /* 可根据需要调整 */
+}
+.no-border-table td {
+    padding: 10px; /* 可根据需要调整 */
+}

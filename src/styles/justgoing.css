@@ -1,0 +1,15 @@
+.nextWhat{
+    width: 1300px;
+    display: block;
+    margin: 60px auto 4px auto;
+    border-radius: 20px;
+    font-size: 4rem;
+
+}
+.nextWhatSmall{
+    width: 1300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 1rem;
+}

@@ -1,6 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import BackgroundVideo from "@/components/BackgroundVideo.tsx";
 import ShowArticles from "@/components/ShowArticles.tsx";
+
+import '../styles/justgoing.css';
+
 const STICKY_END = 1200;    // 结束吸顶的位置
 const HEIGHT = 200;         // 组件自身高度（可用ref自动测量）
 
@@ -46,8 +49,10 @@ const StickyExample = () => {
             <div ref={ref} style={style}>
                 <BackgroundVideo />
                 <div className="articles"><ShowArticles /></div>
+                <div><p className="nextWhat">Recent</p>
+                    <p className="nextWhatSmall">I don't know how this happened</p>
+                </div>
             </div>
-
         </div>
     );
 };

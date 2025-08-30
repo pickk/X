@@ -1,11 +1,11 @@
 import React from "react";
 import '/src/styles/articles.css';
+import NoBorderTable from "@/components/table.tsx";
+
 const ShowArticles: React.FC = () => {
     return (
         <div>
-            <a href="https://example.com" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>
-                超链接内容
-            </a>
+            <NoBorderTable/>
         </div>
     )
 }

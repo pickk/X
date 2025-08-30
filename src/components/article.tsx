@@ -1,14 +1,21 @@
-import react from "react";
+require('dotenv').config();
+const express = require('express');
+const mysql = require('mysql2');
+const app = express();
 
-interface ArticleProps {
-  title: string;
-  content: string;
-}
-export const Article: react.FC<ArticleProps> = ({ title, content }) => {
-  return (
-    <article className="prose lg:prose-xl dark:prose-invert max-w-none">
-      <h1>{title}</h1>
-      <p>{content}</p>
-    </article>
-  );
-};
+const connection = mysql.createConnection({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
+});
+
+
+app.get('/api/article', (req, res) => {
+    connection.query('SELECT title, content FROM articles LIMIT 1', (err, results) => {
+        if (err) return res.status(500).json({ error: err.message });
+        res.json(results[0]);
+    });
+});
+
+app.listen(3000, () => console.log('Server running on port 3000'));
